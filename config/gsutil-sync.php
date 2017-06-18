@@ -2,7 +2,7 @@
 
 return [
     // Gsutil bin path
-    'bin' => '/usr/local/bin/gsutil',
+    'bin' => env('GSUTIL_BIN'),
 
     // What is the full path to your private key file?
     'key' => env('GSUTIL_KEY_PATH'),
