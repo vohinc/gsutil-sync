@@ -1,0 +1,24 @@
+{
+    "name": "vohinc/gsutil-sync",
+    "description": "Execute gsutil rsync",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Casper Lai",
+            "email": "casper.lai@sleepingdesign.com"
+        }
+    ],
+    "require": {
+        "php": "^7",
+        "illuminate/support": "~5.1",
+        "illuminate/console": "~5.1",
+        "wilderborn/partyline": "^1.0",
+        "symfony/process": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vohinc\\GsutilSync\\": "src"
+        }
+    }
+}
