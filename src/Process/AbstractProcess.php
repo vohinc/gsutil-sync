@@ -24,10 +24,12 @@ abstract class AbstractProcess implements ProcessInterface
      * @param $command
      *
      * @throws \Symfony\Component\Process\Exception\RuntimeException
+     * @throws \Symfony\Component\Process\Exception\InvalidArgumentException
      */
     public function __construct($command)
     {
         $this->process = new Process($command);
+        $this->process->setTimeout(0);
     }
 
     /**
