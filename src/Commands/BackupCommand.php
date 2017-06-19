@@ -44,7 +44,7 @@ class BackupCommand extends AbstractCommand
             }
         } catch (MissingBinException $ex) {
             $this->error('Sorry, Missing bin file. Please install `gsutil` or setup correct path');
-        }  catch (MissingConfigException $ex) {
+        } catch (MissingConfigException $ex) {
             $this->error('Sorry, Missing config file. Please run `php artisan gsutil:config` to create config file');
         }
     }
